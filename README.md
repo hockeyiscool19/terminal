@@ -1,1 +1,1 @@
-# treminal
+# terminal
