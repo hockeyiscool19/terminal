@@ -1,3 +1,7 @@
 
 /.streamlit/secrets.toml
 /venv
+serviceAccount.json
+credentials.json
+token.json
+**/__pycache__/
