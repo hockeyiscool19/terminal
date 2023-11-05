@@ -9,7 +9,6 @@ from google.oauth2.credentials import Credentials
 from google_auth_oauthlib.flow import InstalledAppFlow
 from googleapiclient.discovery import build
 from googleapiclient.errors import HttpError
-from email.mime.base import MIMEBase
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 import threading
@@ -229,8 +228,3 @@ initialize_app()
 # Usage:
 GMAIL = GmailConnector()
 GMAIL.connect()
-
-# emails = GMAIL.read_emails_in_timeframe('2023/10/20', '2023/10/27')
-# GMAIL.send_email('Test Subject', 'Test Body', 'joeisenman@davidson.edu')
-# email_contents = GMAIL.view_email_contents('18b6719ce5640570')
-# email_contents

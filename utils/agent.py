@@ -1,13 +1,10 @@
-import openai
 from langchain.agents import initialize_agent, AgentType
 from langchain.agents.format_scratchpad import format_to_openai_functions
 from langchain.agents.output_parsers import OpenAIFunctionsAgentOutputParser
-from langchain.chains import LLMMathChain
 from langchain.chat_models import ChatOpenAI
 from langchain.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain.tools import StructuredTool
 from langchain.tools.render import format_tool_to_openai_function
-from langchain.utilities import SerpAPIWrapper, SQLDatabase
 from utils.gmail import GMAIL
 import streamlit as st
 
